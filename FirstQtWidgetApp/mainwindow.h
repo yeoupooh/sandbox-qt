@@ -2,7 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "myrunnable.h"
 #include "mythread.h"
 
 namespace Ui {
@@ -20,7 +19,6 @@ public:
 private:
     Ui::MainWindow *ui;
     bool isRunning;
-    MyRunnable runnable;
     MyThread thread;
 
 private slots:
